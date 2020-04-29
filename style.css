@@ -6,9 +6,12 @@
 
 html {
     font-family: arial;
+    /*    background-color: #012340;*/
+    background: linear-gradient(to right, #141e30, #243b55);
+    min-height: 300vh;
 }
 
-header {
+header.topka {
     height: 100vh;
     background: url("https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-size: cover;
@@ -19,18 +22,10 @@ header {
 
 }
 
-header::after {
-    content: "";
-    display: block;
-    background: url(cos.svg);
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: 100%;
-}
+
 
 header .bg {
-    background-color: rgba(8, 4, 4, 0.6);
+    background-color: rgba(74, 115, 140, 0.6);
     height: 100vh;
     padding: 30vh 0;
 }
@@ -58,26 +53,36 @@ div.top p {
 }
 
 .about {
-    color: #333;
+    ;
+    color: #F2F2F2;
+    padding: 50px 20px;
+
+}
+
+.wrap {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .about h2 {
-    font-size: 80px;
-    display: block;
+    font-size: 60px;
     text-align: center;
-    border-bottom: 3px solid #333;
-    margin-bottom: 30px;
+    border-bottom: 3px solid #aaa;
+
     letter-spacing: 2px;
-    width: 15%;
+    width: 300px;
     margin: 0 auto 20px;
+
+
 }
 
 .about p {
-    padding: 0 20px 20px;
 
-    font-size: 20px;
-    line-height: 200%;
-    text-align: center;
+
+    font-size: 22px;
+    line-height: 130%;
+    text-align: left;
+    padding-bottom: 20px;
 }
 
 .about p.up {
@@ -86,4 +91,34 @@ div.top p {
 
 .about p:last-of-type {
     font-weight: bold;
+}
+
+.col {
+    display: flex;
+}
+
+.col .box {
+    width: 25vw;
+    margin: 0 10px;
+
+
+}
+
+.col .box div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    background: #F2F2F2;
+    padding: 15px 15px;
+    text-align: center;
+    border-radius: 0 0 80px 8px;
+}
+
+.col .box h2 {
+    text-align: center;
+    background: linear-gradient(to right, #43c6ac, #191654);
+    color: white;
+    letter-spacing: 2px;
+    padding: 20px;
+    border-radius: 80px 8px 0 0;
 }
