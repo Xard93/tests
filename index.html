@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kama</title>
+</head>
+
+<body>
+    <header>
+        <div class="bg">
+            <div class="top">
+                <h1>Kama</h1>
+                <p id="text"></p>
+                <!--            <img src="cos.svg" alt="">-->
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <h2>O Nas</h2>
+            <p>Biuro usług rachunkowych KAMA jest alternatywą dla często nieopłacalnego już utrzymania własnej księgowości w firmie, jest wsparciem dla każdej firmy z Łodzi i okolic, która oczekuje profesjonalnych usług z dziedziny księgowości, rachunkowości, obsługi kadrowo-płacowej, innych dziedzin.</p>
+            <p class="up">
+                naszym atutem jest doświadczenie, sumienność i otwartość na
+                potrzeby klienta – poparte 25 letnim doświadczeniem w strukturach
+                księgowo-kadrowych
+            </p>
+            <p>Najważniejsze jest dla nas satysfakcja Naszych Klientów, dlatego też podchodzimy indywidualnie do potrzeb każdego z Nich. Staramy się, aby nasza współpraca oparta była na wzajemnym zrozumieniu.</p>
+            <p>
+                Gwarantujemy pełną poufność zarówno w zakresie wszelkich informacji dotyczących naszych Klientów w czasie realizowanej współpracy, jak i po jej wygaśnięciu.
+            </p>
+            <p>
+                Serdecznie zapraszamy do współpracy.</p>
+        </section>
+    </main>
+    <script>
+        let i = 0;
+        let text = "Zapewniamy rzetelną i profesjonalną obsługę księgowo-podatkową oraz płacową.";
+
+
+        function typing() {
+
+            if (i < text.length) {
+                document.getElementById("text").innerHTML += text.charAt(i);
+
+                i++;
+                setTimeout(typing, 50);
+            }
+        }
+        typing();
+    </script>
+</body></html>

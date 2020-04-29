@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: arial;
+}
+
+header {
+    height: 100vh;
+    background: url("https://images.pexels.com/photos/53621/calculator-calculation-insurance-finance-53621.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+    background-repeat: no-repeat;
+
+}
+
+header::after {
+    content: "";
+    display: block;
+    background: url(cos.svg);
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+header .bg {
+    background-color: rgba(8, 4, 4, 0.6);
+    height: 100vh;
+    padding: 30vh 0;
+}
+
+header div.top {
+    width: 80vw;
+    height: 40vh;
+    text-align: center;
+    margin: 0 auto;
+    color: #fff;
+}
+
+div.top h1 {
+    font-size: 20vh;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+div.top p {
+    font-size: 20px;
+    ;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 150%;
+}
+
+.about {
+    color: #333;
+}
+
+.about h2 {
+    font-size: 80px;
+    display: block;
+    text-align: center;
+    border-bottom: 3px solid #333;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    width: 15%;
+    margin: 0 auto 20px;
+}
+
+.about p {
+    padding: 0 20px 20px;
+
+    font-size: 20px;
+    line-height: 200%;
+    text-align: center;
+}
+
+.about p.up {
+    text-transform: uppercase;
+}
+
+.about p:last-of-type {
+    font-weight: bold;
+}
